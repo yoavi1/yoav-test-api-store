@@ -12,12 +12,25 @@ app.getProductDetails = async (url) => {
 
     console.log(response.status);
     return response;
-  } catch (error) {
+  }
+   catch (error) {
     console.log(error.response.status);
     return error.response;
   }
 };
 app.getProductDetails('https://fakestoreapi.com/products/1');
+
+
+
+module.exports = app;
+
+
+
+
+
+
+
+
 // app.getProductDetails('https://fakestoreapi.com/products');
 // app.getProductDetails('https://fakestoreapi.com/products/1');
 
@@ -116,4 +129,3 @@ app.getProductDetails('https://fakestoreapi.com/products/1');
 //   console.log(`Server is running on http://localhost:${port}`);
 // });
 
-module.exports = app;
